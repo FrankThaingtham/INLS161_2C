@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../index.html#about">About Me</a></li>
+            <li><a href="../../index.html#classes">Classes</a></li>
+            <li><a href="../../index.html#interest">Interests</a></li>
+            <li><a href="../../index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>My Book List</h2>
+        <p>If I were to be stuck on a desert island</p>
+        <div class="about-content">
+            <!-- Add content for the "about-content" div if needed -->
+        </div>
+        <div>
+            <img src="../book/lib.jpg" alt="Library Image">
+        </div>
+        <div>
+            <ol style="list-style-position: inside;">
+                <li>The Subtle Art of Not Giving a F*ck by Mark Manson</li>
+                <li>Robinson Crusoe by Daniel Defoe</li> 
+                <li>Lord of the Flies by William Golding</li>
+                <li>Meditation by Marcus Aurelius</li>
+                <li>Thus Spoke Zarathustra by Friedrich Nietzsche</li>
+                <li>Critique of Pure Reason by Immanuel Kant</li>
+                <li>Being and Time by Martin Heidegger</li>
+                <li>A History of Western Philosophy by Bertrand Russell</li>
+                <li>The Republic by Plato</li>
+                <li>The Art of Happiness by Dalai Lama and Howard Cutler</li>
+            </ol>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright @2023; Desgin by Frank Thaingtham</p>
+        <script>var year = new Date();decument.write(year.getFullYear());</script>
+        Last Update on
+        <script>
+            <!-- Display Date -->
+                    var days = new Array(8);
+                    days[1] = "Sunday";
+                    days[2] = "Monday";
+                    days[3] = "Tuesday";
+                    days[4] = "Wednesday";
+                    days[5] = "Thursday";
+                    days[6] = "Friday";
+                    days[7] = "Saturday";
+                    var months = new Array(13);
+                    months[1] = "January";
+                    months[2] = "February";
+                    months[3] = "March";
+                    months[4] = "April";
+                    months[5] = "May";
+                    months[6] = "June";
+                    months[7] = "July";
+                    months[8] = "August";
+                    months[9] = "September";
+                    months[10] = "October";
+                    months[11] = "November";
+                    months[12] = "December";
+                    var dateObj = new Date(document.lastModified)
+                    var wday = days[dateObj.getDay() + 1]
+                    var lmonth = months[dateObj.getMonth() + 1]
+                    var date = dateObj.getDate()
+                    var fyear = dateObj.getYear()
+                    if (fyear < 2000) fyear = fyear + 1900
+                    document.write("" + wday + ", " + date + " " + lmonth + " " + fyear)   
+        </script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Thaingtham - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#interest">Interests</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="picture">
+        <h1>Welcome to my Personal Website</h1>
+        <img src="thumbnail_IMG_2239.jpg" alt="Picture">
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>Hello! My name is Frank Thaingtham. 
+                I'm a second-year Information and Library Science and Computer Science Major. 
+                I grew up in Thailand and moved to the U.S. when I was 13 years old. 
+                I have experience working at many different businesses and learned many skills throughout my time. 
+                Here is my Résumé!</p>
+        </div>
+        <div style="text-align: center;">
+            <embed src="Résumé.pdf" width="800" height="800">
+        </div>
+    </section>
+    <section id="classes">
+        <h2>My Fall 2023 Classes</h2>
+        <button class="tablink" onclick="openPage('ASIA300', this, 'red')">ASIA 300</button>
+        <button class="tablink" onclick="openPage('GERM204', this, 'green')" id="defaultOpen">GERM 204</button>
+        <button class="tablink" onclick="openPage('INLS161', this, 'blue')">INLS 161</button>
+        <button class="tablink" onclick="openPage('INLS201', this, 'orange')">INLS 201</button>
+        <button class="tablink" onclick="openPage('SOCI101', this, 'purple')">SOCI 101</button>
+
+        <div id="ASIA300" class="tabcontent">
+            <a href="https://sakai.unc.edu/portal/site/137b34f6-e098-445c-935a-8d5034c8a6d7"> <h3> Link to Home Page </h3> </a>
+            <p>
+                Examines the diverse beliefs, practices, and cultures associated with Buddhism in the Himalayan regions of India, Nepal, and Tibet. 
+                Topics include Buddhism's development and spread, the cultural dynamics of Himalayan societies, monasticism, folk religion, revivalism, 
+                tourism, gender, globalization, and the role of the state in shaping Buddhist life and culture.
+            </p>
+
+        </div>
+
+        <div id="GERM204" class="tabcontent">
+            <a href="https://uncch.instructure.com/courses/33451"> <h3> Link to Home Page </h3> </a>
+                <p style="text-align: center;">
+                    Students acquire necessary materials and opportunities to develop further their language skills in a cultural context. 
+                    They review and expand upon the basic grammar covered in beginning German. 
+                 </p>
+        </div>
+
+        <div id="INLS161" class="tabcontent">
+            <a href="https://ils.unc.edu/courses/2023_fall/inls161_001/s01.syllabus.html"> <h3> Link to Home Page </h3> </a>
+                 <p>
+                    Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.
+                 </p>
+                
+        </div>
+
+        <div id="INLS201" class="tabcontent">
+            <a href="https://aeshin.org/teaching/inls-201/2023/fa/"> <h3> Link to Home Page </h3> </a>
+                <p>
+                    Examines the evolution of information science; information representation, organization and management; search and retrieval; 
+                    human information seeking and interaction; organizational behavior and communication; policy, ethics and scholarly communication.
+                </p>
+        </div>
+
+        <div id="SOCI101" class="tabcontent">
+            <a href="https://uncch.instructure.com/courses/38105"> <h3> Link to Home Page </h3> </a>
+                <p> 
+                    Introduction to sociology as a discipline that includes study of differences and equality, social structure and institutions, culture, 
+                    social change, individuals and populations, and social psychology.
+                </p>
+        </div>
+
+        <div>
+            <a href="https://registrar.unc.edu/courses/schedule-of-classes/" class="learn-more-button">Learn More</a>
+        </div>
+
+        
+
+        <script>
+            function openPage(pageName, elmnt, color) {
+            // Hide all elements with class="tabcontent" by default */
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remove the background color of all tablinks/buttons
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+
+            // Show the specific tab content
+            document.getElementById(pageName).style.display = "block";
+
+            // Add the specific color to the button used to open the tab content
+            elmnt.style.backgroundColor = color;
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+
+    </section>
+    <section id="interest">
+        <h2 style="margin-bottom: 50px;">Interests</h2>
+        <div style="margin-bottom: 50px;">
+            <p> I have many interest, but here is my favorite book and what I love doing.</p>
+        </div>
+        <div class="interest-icon">
+            <a href="./Interest/book/book.html">
+                <i class="fa-solid fa-book fa-10x"></i>
+            </a>
+        </div>
+        <div class="interest-icon">
+            <a href="./Interest/other/other.html">
+                <i class="fa-solid fa-heart fa-10x"></i>
+            </a>
+        </div>
+        
+        <script src="https://kit.fontawesome.com/38a58cafdd.js" crossorigin="anonymous"></script>
+
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <iframe class="custom-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdJ817_fbjsgEItIXC3-jbZ3NXBP8j44rW8wlwcK3kL3Q6nMw/viewform?embedded=true"></iframe>
+    </section>
+
+    <footer>
+        <p>Copyright @2023; Desgin by Frank Thaingtham</p>
+        <script>var year = new Date();decument.write(year.getFullYear());</script>
+        Last Update on
+        <script>
+            <!-- Display Date -->
+                    var days = new Array(8);
+                    days[1] = "Sunday";
+                    days[2] = "Monday";
+                    days[3] = "Tuesday";
+                    days[4] = "Wednesday";
+                    days[5] = "Thursday";
+                    days[6] = "Friday";
+                    days[7] = "Saturday";
+                    var months = new Array(13);
+                    months[1] = "January";
+                    months[2] = "February";
+                    months[3] = "March";
+                    months[4] = "April";
+                    months[5] = "May";
+                    months[6] = "June";
+                    months[7] = "July";
+                    months[8] = "August";
+                    months[9] = "September";
+                    months[10] = "October";
+                    months[11] = "November";
+                    months[12] = "December";
+                    var dateObj = new Date(document.lastModified)
+                    var wday = days[dateObj.getDay() + 1]
+                    var lmonth = months[dateObj.getMonth() + 1]
+                    var date = dateObj.getDate()
+                    var fyear = dateObj.getYear()
+                    if (fyear < 2000) fyear = fyear + 1900
+                    document.write("" + wday + ", " + date + " " + lmonth + " " + fyear)   
+        </script>
+    </footer>
+</body>
+</html>
